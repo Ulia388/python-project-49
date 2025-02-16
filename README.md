@@ -5,3 +5,5 @@
 [![Actions Status](https://github.com/Ulia388/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Ulia388/python-project-49/actions)
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6653e9f6ee2c94bdc6f3/test_coverage)](https://codeclimate.com/github/Ulia388/python-project-49/test_coverage)
+
+<script src="https://asciinema.org/a/EndHokjAJxSoz5gR59pJwkqGD.js" id="asciicast-EndHokjAJxSoz5gR59pJwkqGD" async="true"></script>
