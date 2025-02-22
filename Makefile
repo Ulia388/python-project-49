@@ -1,19 +1,21 @@
-.PHONY: install
-
 install:
-    uv sync     
+	    uv sync
 
-brain-games:
-    uv run brain-games
+run:
+	    uv run hexlet-python-package
+
+test:
+	    uv run pytest
+
+test-coverage:
+	    uv run pytest --cov=hexlet_python_package --cov-report xml
+
+lint:
+	    uv run ruff check
+
+check: test lint
 
 build:
-    uv build
+	    uv build
 
-package-install:
-    uv tool install dist/*.whl
-
-make lint:
-    uv run ruff check brain_games
-    uv run ruff check brain_even
-    uv run ruff check brain_calc
-    uv run ruff check brain_gcd
+.PHONY: install test lint selfcheck check build
