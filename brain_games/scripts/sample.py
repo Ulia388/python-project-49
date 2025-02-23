@@ -41,3 +41,19 @@ def generate_progression():
     progression[num_index] = ".."
 
     return progression, number
+
+
+def prime_number(num):
+
+    if num % 2 == 0 or num % 3 == 0:                 # вычеркиваем все числа, делящиеся на 2 и 3
+        return False
+    i = 5                                             # пропускаем 4 т.к. делится на 2
+    while i * i <= num:              
+        if num % i == 0 or num % (i + 2) == 0:        # учитываем все числа, кот. делятся на 5, (i + 2) - учитываем число 7 
+            return False
+        i += 6                                        # учитываем числа 11, 17 и т.д.
+    return True
+
+
+
+

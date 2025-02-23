@@ -29,13 +29,12 @@ def main():
         correct_answer = "yes" if is_even(number) else "no"
 
         if answer != correct_answer:
-            print(
-                f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'."
-            )
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             return
 
         print("Correct!")
+        
         correct_answers += 1
 
     print(f"Congratulations, {name}!")
