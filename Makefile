@@ -1,21 +1,21 @@
 install:
-	    uv sync
+	uv sync
 
 run:
-	    uv run hexlet-python-package
+	uv run hexlet-python-package
 
 test:
-	    uv run pytest
+	uv run pytest
 
 test-coverage:
-	    uv run pytest --cov=hexlet_python_package --cov-report xml
+	uv run pytest --cov=hexlet_python_package --cov-report xml
 
 lint:
-	    uv run ruff check
+	uv run ruff check
 
 check: test lint
 
 build:
-	    uv build
+	uv build
 
 .PHONY: install test lint selfcheck check build

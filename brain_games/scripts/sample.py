@@ -1,5 +1,6 @@
 import prompt
 import random 
+import numpy as np 
 
 
 def welcome():
@@ -20,6 +21,7 @@ def random_expression():
     return expression
 
 
+
 def calculate(num1, operation, num2):
     if operation == '+':
         return num1 + num2
@@ -27,3 +29,15 @@ def calculate(num1, operation, num2):
         return num1 - num2
     elif operation == '*':
         return num1 * num2
+    
+
+def generate_progression():
+    
+    start = np.random.randint(0, 10)  
+    step = np.random.randint(1, 5)     
+    progression = [start + i * step for i in range(10)]
+    num_index = np.random.randint(0, 10)  
+    number = progression[num_index]
+    progression[num_index] = '..'  
+
+    return progression, number
