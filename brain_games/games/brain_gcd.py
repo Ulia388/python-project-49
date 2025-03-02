@@ -1,4 +1,7 @@
-from brain_games.scripts.sample import generate_progression, welcome
+import math
+import random
+
+from brain_games.scripts.main import welcome
 
 
 def main():
@@ -8,13 +11,13 @@ def main():
 
     name = welcome()
 
-    print("What number is missing in the progression?")
+    print("Find the greatest common divisor of given numbers.")
 
     for _ in range(3):
-
-        progression, number = generate_progression()
-        correct_answer = number
-        print("Question:", " ".join(map(str, progression)))
+        num1 = random.randint(1, 100)
+        num2 = random.randint(1, 100)
+        correct_answer = math.gcd(num1, num2)
+        print(f"Question: {num1} {num2}")
 
         answer = int(input("Your answer: "))
 
@@ -25,5 +28,5 @@ def main():
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             return
-
+            
     print(f"Congratulations, {name}!")

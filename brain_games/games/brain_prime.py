@@ -1,5 +1,5 @@
 import random
-from brain_games.scripts.sample import welcome
+from brain_games.scripts.main import welcome
 from brain_games.scripts.sample import prime_number
 
 

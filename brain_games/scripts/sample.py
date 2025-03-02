@@ -4,14 +4,6 @@ import numpy as np
 import prompt
 
 
-def welcome():
-
-    print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
-    return name
-
-
 def random_expression():
 
     num1 = random.randint(1, 100)
@@ -57,3 +49,27 @@ def prime_number(num):
 
 
 
+def main():
+
+    if __name__ == "__main__":
+        main()
+
+    name = welcome()
+    print("What is the result of the expression?")
+
+    for _ in range(3):
+        expression = random_expression()
+        correct_answer = eval(expression)
+        print(f"Question: {expression}")
+
+        answer = int(input("Your answer: "))
+
+        if answer == correct_answer:
+            print("Correct!")
+
+        else:
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {name}!")
+            return
+
+    print(f"Congratulations, {name}!")
