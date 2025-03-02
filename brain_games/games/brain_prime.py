@@ -1,32 +1,22 @@
 import random
-from brain_games.scripts.main import welcome
-from brain_games.scripts.sample import prime_number
 
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+def prime_number(num):
 
-def main():
+    if num % 2 == 0 or num % 3 == 0:                 
+        return False
+    i = 5                                             
+    while i * i <= num:              
+        if num % i == 0 or num % (i + 2) == 0:        
+            return False
+        i += 6                                       
+    return True
 
-    if __name__ == "__main__":
-        main()
+def get_question_and_answer():
 
-    name = welcome()
-
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-    for _ in range(3):
-
-        number = random.randint(2, 100)
-        correct_answer = number
-        print(f"Question: {number}")
-        answer = input("Your answer: ").strip().lower()
-
-        correct_answer = "yes" if prime_number(number) else "no"
-
-        if answer != correct_answer:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {name}!")
-            return
-
-        print("Correct!")
-
-    print(f"Congratulations, {name}!")
+    number = random.randint(2, 100)
+    question = f"{number}"
+    correct_answer = ("yes").strip().lower() if prime_number(number) else ("no").strip().lower()
+    
+    return question, correct_answer
