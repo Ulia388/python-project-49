@@ -20,7 +20,7 @@ def conditions_game(description, get_question_and_answer):
         ) = get_question_and_answer()
 
         print(f"Question: {question}")
-        answer = int(input("Your answer: "))
+        answer = input("Your answer: ")
 
         if answer == correct_answer:
             print("Correct!")

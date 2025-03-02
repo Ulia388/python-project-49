@@ -9,6 +9,6 @@ def get_question_and_answer():
     operations = ["+", "-", "*"]
     operation = random.choice(operations)
     question = f"{num1} {operation} {num2}"
-    correct_answer = int(eval(question))
+    correct_answer = str(eval(question))
     
     return question, correct_answer
