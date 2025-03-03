@@ -1,29 +1,22 @@
-from brain_games.scripts.main import welcome
-from brain_games.scripts.sample import generate_progression
+import numpy as np
 
-def main():
+DESCRIPTION = "What number is missing in the progression?"
 
-    if __name__ == "__main__":
-        main()
+def generate_progression():
 
-    name = welcome()
+    start = np.random.randint(0, 10)
+    step = np.random.randint(1, 5)
+    progression = [start + i * step for i in range(10)]
+    num_index = np.random.randint(0, 10)
+    number = progression[num_index]
+    progression[num_index] = ".."
 
-    print("What number is missing in the progression?")
+    return progression, number
 
-    for _ in range(3):
+def get_question_and_answer():
 
-        progression, number = generate_progression()
-        correct_answer = number
-        print("Question:", " ".join(map(str, progression)))
-
-        answer = int(input("Your answer: "))
-
-        if answer == correct_answer:
-            print("Correct!")
-
-        else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {name}!")
-            return
-
-    print(f"Congratulations, {name}!")
+    progression, number = generate_progression()
+    question = " ".join(map(str, progression))
+    correct_answer = str(number)
+    
+    return question, correct_answer
