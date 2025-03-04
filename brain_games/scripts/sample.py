@@ -51,9 +51,6 @@ def prime_number(num):
 
 def main():
 
-    if __name__ == "__main__":
-        main()
-
     name = welcome()
     print("What is the result of the expression?")
 
@@ -73,3 +70,6 @@ def main():
             return
 
     print(f"Congratulations, {name}!")
+
+if __name__ == "__main__":
+        main()

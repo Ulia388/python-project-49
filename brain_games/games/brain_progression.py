@@ -2,6 +2,7 @@ import numpy as np
 
 DESCRIPTION = "What number is missing in the progression?"
 
+
 def generate_progression():
 
     start = np.random.randint(0, 10)
@@ -12,6 +13,7 @@ def generate_progression():
     progression[num_index] = ".."
 
     return progression, number
+    
 
 def get_question_and_answer():
 

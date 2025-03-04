@@ -2,6 +2,7 @@ import random
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+
 def prime_number(num):
 
     if num % 2 == 0 or num % 3 == 0:                 
@@ -12,6 +13,7 @@ def prime_number(num):
             return False
         i += 6                                       
     return True
+    
 
 def get_question_and_answer():
 
