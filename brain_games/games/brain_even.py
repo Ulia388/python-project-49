@@ -11,6 +11,7 @@ def get_question_and_answer():
 
     number = random.randint(1, 100)
     question = number
-    correct_answer = ("yes").strip().lower() if is_even(number) else ("no").strip().lower()
+    correct_answer = ("yes").strip().lower() if is_even(number) \
+    else ("no").strip().lower()
     
     return question, correct_answer
