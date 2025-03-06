@@ -9,11 +9,10 @@ def is_even(number):
 
 def get_question_and_answer():
 
-    number = random.randint(1, 100)
+    max_number = 100
+    min_number = 1
+    number = random.randint(min_number, max_number)
     question = number
-    correct_answer = (
-        ("yes").strip().lower() if is_even(number) 
-        else ("no").strip().lower()
-    )
+    correct_answer = ("yes" if is_even(number) else "no")
     
     return question, correct_answer

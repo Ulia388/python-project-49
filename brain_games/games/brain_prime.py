@@ -16,12 +16,10 @@ def prime_number(num):
     
 
 def get_question_and_answer():
-
-    number = random.randint(2, 100)
+    max_number = 100
+    min_number = 2
+    number = random.randint(min_number, max_number)
     question = f"{number}"
-    correct_answer = (
-        "yes".strip().lower() if prime_number(number) else 
-        "no".strip().lower()
-    )
+    correct_answer = ("yes" if prime_number(number) else "no")
     
     return question, correct_answer

@@ -1,13 +1,15 @@
 import random
 
 DESCRIPTION = "What is the result of the expression?"
+ARITHMETIC_OPERATIONS = ("+", "-", "*")
 
 
 def get_question_and_answer():
-    num1 = random.randint(1, 100)
-    num2 = random.randint(1, 100)
-    operations = ["+", "-", "*"]
-    operation = random.choice(operations)
+    max_number = 100
+    min_number = 1
+    num1 = random.randint(min_number, max_number)
+    num2 = random.randint(min_number, max_number)
+    operation = random.choice(ARITHMETIC_OPERATIONS)
     
     question = f"{num1} {operation} {num2}"
     
