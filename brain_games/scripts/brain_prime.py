@@ -1,5 +1,5 @@
-from brain_games.games.brain_prime import DESCRIPTION, get_question_and_answer
 from brain_games.basic import conditions_game
+from brain_games.games.brain_prime import DESCRIPTION, get_question_and_answer
 
 
 def main():
