@@ -22,9 +22,6 @@ brain-prime:
 run:
 	uv run hexlet-python-package
 
-test-coverage:
-	uv run pytest --cov=hexlet_python_package --cov-report xml
-
 lint:
 	uv run ruff check
 
@@ -39,4 +36,4 @@ package-install:
 package-reinstall:
 	uv tool install --force dist/*whl
 
-.PHONY: install test lint selfcheck check build
+.PHONY: install lint selfcheck check build
