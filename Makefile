@@ -25,8 +25,6 @@ run:
 lint:
 	uv run ruff check
 
-check: test lint
-
 build:
 	uv build
 
@@ -36,4 +34,4 @@ package-install:
 package-reinstall:
 	uv tool install --force dist/*whl
 
-.PHONY: install lint selfcheck check build
+.PHONY: install lint selfcheck build
