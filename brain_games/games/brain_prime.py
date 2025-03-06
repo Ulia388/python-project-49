@@ -20,7 +20,7 @@ def get_question_and_answer():
     number = random.randint(2, 100)
     question = f"{number}"
     correct_answer = (
-        "yes".strip().lower() if prime_number(number) else \
+        "yes".strip().lower() if prime_number(number) else 
         "no".strip().lower()
     )
     
