@@ -6,12 +6,12 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6653e9f6ee2c94bdc6f3/test_coverage)](https://codeclimate.com/github/Ulia388/python-project-49/test_coverage)
 
-<script src="https://asciinema.org/a/EndHokjAJxSoz5gR59pJwkqGD.js" id="asciicast-EndHokjAJxSoz5gR59pJwkqGD" async="true"></script>
+[![asciicast](https://asciinema.org/a/L3bQ0MgCoL7CSkCkP19eX7QKI.svg)](https://asciinema.org/a/L3bQ0MgCoL7CSkCkP19eX7QKI)
 
-<script src="https://asciinema.org/a/CIbeyng0YwxosX9VVvBaRrTUa.js" id="asciicast-CIbeyng0YwxosX9VVvBaRrTUa" async="true"></script>
+[![asciicast](https://asciinema.org/a/qKKqOSbcu10yiJVgHioXAON2X.svg)](https://asciinema.org/a/qKKqOSbcu10yiJVgHioXAON2X)
 
-<script src="https://asciinema.org/a/QUjYERx4byEqGZR2U2iMHbvJy.js" id="asciicast-QUjYERx4byEqGZR2U2iMHbvJy" async="true"></script>
+[![asciicast](https://asciinema.org/a/QUjYERx4byEqGZR2U2iMHbvJy.svg)](https://asciinema.org/a/QUjYERx4byEqGZR2U2iMHbvJy)
 
-<script src="https://asciinema.org/a/qKKqOSbcu10yiJVgHioXAON2X.js" id="asciicast-qKKqOSbcu10yiJVgHioXAON2X" async="true"></script>
+[![asciicast](https://asciinema.org/a/CIbeyng0YwxosX9VVvBaRrTUa.svg)](https://asciinema.org/a/CIbeyng0YwxosX9VVvBaRrTUa)
 
-<script src="https://asciinema.org/a/L3bQ0MgCoL7CSkCkP19eX7QKI.js" id="asciicast-L3bQ0MgCoL7CSkCkP19eX7QKI" async="true"></script>
+[![asciicast](https://asciinema.org/a/EndHokjAJxSoz5gR59pJwkqGD.svg)](https://asciinema.org/a/EndHokjAJxSoz5gR59pJwkqGD)
