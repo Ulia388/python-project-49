@@ -1,6 +1,6 @@
 import prompt
 
-from brain_games.games.scripts.cli import welcome
+from brain_games.cli import welcome
 
 
 def run_game(description, get_question_and_answer):

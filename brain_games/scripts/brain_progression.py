@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from brain_games.basic import conditions_game
+from brain_games.engine import run_game
 from brain_games.games.brain_progression import (
     DESCRIPTION,
     get_question_and_answer,
@@ -8,7 +8,7 @@ from brain_games.games.brain_progression import (
 
 
 def main():
-    conditions_game(DESCRIPTION, get_question_and_answer)
+    run_game(DESCRIPTION, get_question_and_answer)
 
 
 if __name__ == "__main__":

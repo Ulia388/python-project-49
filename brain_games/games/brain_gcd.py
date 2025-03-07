@@ -1,7 +1,7 @@
 import math
 import random
 
-DESCRIPTION = "Find the greatest common divisor of given numbers."
+DESCRIPTION = "4."
 
 
 def get_question_and_answer():
