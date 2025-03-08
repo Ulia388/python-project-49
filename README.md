@@ -6,6 +6,20 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6653e9f6ee2c94bdc6f3/test_coverage)](https://codeclimate.com/github/Ulia388/python-project-49/test_coverage)
 
+### Links
+
+This project was built using these tools:
+
+| Tool                                                          Description
+
+[uv](https://docs.astral.sh/uv/)                               "An extremely fast Python package and project manager, written in Rust"
+[ruff](https://docs.astral.sh/ruff/)                           "An extremely fast Python linter and code formatter, written in Rust"
+make                                                           "Utility for launching the game using Makefile"
+
+### Setup
+
+make install 
+
 [![asciicast](https://asciinema.org/a/L3bQ0MgCoL7CSkCkP19eX7QKI.svg)](https://asciinema.org/a/L3bQ0MgCoL7CSkCkP19eX7QKI)
 
 [![asciicast](https://asciinema.org/a/qKKqOSbcu10yiJVgHioXAON2X.svg)](https://asciinema.org/a/qKKqOSbcu10yiJVgHioXAON2X)
