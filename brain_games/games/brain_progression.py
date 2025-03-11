@@ -2,9 +2,6 @@ import numpy as np
 
 DESCRIPTION = "What number is missing in the progression?"
 LENGTH_OF_PROGRESSION = 10
-FIRST_NUMBER_OF_PROGRESSION = np.random.randint(0, 10)
-STEP_OF_PROGRESSION = step = np.random.randint(1, 5)
-HIDDEN_ELEMENT = np.random.randint(0, 10)
 
 
 def generate_progression(start, step):
@@ -14,14 +11,17 @@ def generate_progression(start, step):
 
 
 def get_question_and_answer():
+    first_number_of_progression = np.random.randint(0, 10)
+    step_of_progression = np.random.randint(1, 5)
+    hidden_element_index = np.random.randint(0, LENGTH_OF_PROGRESSION)
 
     progression = generate_progression(
-        FIRST_NUMBER_OF_PROGRESSION, 
-        STEP_OF_PROGRESSION
+        first_number_of_progression, 
+        step_of_progression
     )
     
-    number = progression[HIDDEN_ELEMENT]
-    progression[HIDDEN_ELEMENT] = ".."
+    number = progression[hidden_element_index]
+    progression[hidden_element_index] = ".."
     
     question = " ".join(map(str, progression))
     correct_answer = str(number)
