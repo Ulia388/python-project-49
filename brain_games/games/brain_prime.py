@@ -1,6 +1,8 @@
 import random
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+MAX_NUMBER = 100
+MIN_NUMBER = 1
 
 
 def prime_number(num):
@@ -16,9 +18,8 @@ def prime_number(num):
     
 
 def get_question_and_answer():
-    max_number = 100
-    min_number = 2
-    number = random.randint(min_number, max_number)
+    
+    number = random.randint(MIN_NUMBER, MAX_NUMBER)
     question = f"{number}"
     correct_answer = ("yes" if prime_number(number) else "no")
     

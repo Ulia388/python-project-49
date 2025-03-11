@@ -2,12 +2,14 @@ import prompt
 
 from brain_games.cli import welcome
 
+GAME_CYCLE = 3
+
 
 def run_game(description, get_question_and_answer):
     name = welcome()
     print(description)
 
-    for _ in range(3):
+    for _ in range(GAME_CYCLE):
         question, correct_answer = get_question_and_answer()
 
         print(f"Question: {question}")
